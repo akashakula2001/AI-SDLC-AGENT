@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Sample Site</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <main class="contact-page" itemscope itemtype="https://schema.org/LocalBusiness">
+    <h1>Contact us</h1>
+    <p>For general inquiries, please contact our team.</p>
+    <p>Email: <a href="mailto:hello@example.com" itemprop="email">hello@example.com</a></p>
+
+    <section class="office-hours" aria-labelledby="office-hours-title">
+      <h2 id="office-hours-title" class="office-hours__title">Office Hours</h2>
+      <dl class="office-hours__schedule">
+        <div class="office-hours__item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+          <dt class="office-hours__day" itemprop="dayOfWeek" content="Monday Tuesday Wednesday Thursday Friday">Monday &ndash; Friday</dt>
+          <dd class="office-hours__hours">
+            <time itemprop="opens" datetime="09:00">9:00 AM</time> &ndash; <time itemprop="closes" datetime="17:00">5:00 PM</time>
+          </dd>
+        </div>
+        <div class="office-hours__item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+          <dt class="office-hours__day" itemprop="dayOfWeek" content="Saturday">Saturday</dt>
+          <dd class="office-hours__hours">
+            <time itemprop="opens" datetime="10:00">10:00 AM</time> &ndash; <time itemprop="closes" datetime="14:00">2:00 PM</time>
+          </dd>
+        </div>
+        <div class="office-hours__item" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+          <dt class="office-hours__day" itemprop="dayOfWeek" content="Sunday">Sunday</dt>
+          <dd class="office-hours__hours">Closed</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>
